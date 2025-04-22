@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #2a2a72;
+    --secondary-color: #009ffd;
+    --success-color: #3cb371;
+    --danger-color: #ff6b6b;
+}
+
+body {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.symptom-card {
+    background: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.symptom-card:hover {
+    transform: translateY(-5px);
+}
+
+.diagnosis-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.certainty-bar {
+    height: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.certainty-progress {
+    height: 100%;
+    background: var(--secondary-color);
+    width: 85%; /* Dynamically set via Jinja later */
+    transition: width 0.5s ease;
+}
+
+.part-diagram {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.part-diagram:hover {
+    transform: scale(1.05);
+}
+
+.symptom-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+}
+
+.symptom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.form-check-input {
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: 0.2em;
+}
