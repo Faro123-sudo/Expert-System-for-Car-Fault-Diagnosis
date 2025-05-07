@@ -1,4 +1,4 @@
-# Smart Car Diagnosis 🔧
+# Expert System for Car Fault Diagnosis 
 
 This project is a web application for diagnosing car faults based on user-reported symptoms. It uses a combination of a rule-based expert system and a machine learning model to identify potential car issues and provide repair guidance.
 
